@@ -2,8 +2,9 @@ import React from "react"
 import axios from "axios";
 
 
+
 const App = () => {
-  let [responseData, setResponseData] = React.useState("")
+  let [responseData, setResponseData] = React.useState("Get Your Daily Ye")
 
   const fetchData = (e) => {
     e.preventDefault();
@@ -20,10 +21,14 @@ const App = () => {
 
 
   return(
-    <div>
-      <h1>  {responseData} </h1>
-      <button onClick={(e) => fetchData(e)}
-      type="button"> Click for ye'ism </button>
+    <div className="grid">
+    <div className="eight wide column">
+    <h1>{responseData} </h1>
+
+
+      <button className="ui centered large violet button" onClick={(e) => fetchData(e)}
+      type="button"> Click for ye'ism   <i class="icon user"></i> </button>
+      </div>
     </div>
   )
 }
