@@ -21,7 +21,7 @@ const App = () => {
 
 
   return(
-    <div className="grid">
+    <div className="grid advice">
     <div className="eight wide column">
     <h1>{responseData} </h1>
 

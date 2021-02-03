@@ -15,6 +15,11 @@ html,header, body {
   display: block !important;
 }
 
+.advice {
+  position:relative;
+  z-index:10000;
+}
+
 .kanye {
   width: 50% !important;
     margin: 0 auto;
